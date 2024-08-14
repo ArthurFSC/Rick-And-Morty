@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 20px; /* Space below the button */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#character-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Creates 5 columns of equal width */
+    gap: 20px; /* Adds spacing between the items */
+    grid-auto-rows: 1fr; /* Ensures all rows are of equal height */
+    max-height: 600px; /* Limits the height of the grid container */
+    overflow: hidden; /* Hides overflow content to avoid scrolling */
+}
+
+.character-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers content inside the card */
+    padding: 10px;
+}
+
+.character-card img {
+    width: 100%;
+    height: 150px; /* Fixed height for images */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-bottom: 1px solid #ddd;
+}
+
+.character-card h3 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.character-card p {
+    font-size: 14px;
+    margin: 5px 0;
+}
